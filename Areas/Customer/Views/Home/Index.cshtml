@@ -3,12 +3,17 @@
     ViewData["Title"] = "Home Page";
 }
 
-@*@foreach (Product product in Model.Product)
-    {
-        @await Html.PartialAsync("~/Views/Shared/_ThumbnailAreaPartial.cshtml", product)
 
-    }*@
-@foreach (var product in Model.Product)
-{
-    <div><partial name="_ThumbnailAreaPartial" model="product" /></div>
-}
+
+
+    <div class="row">
+        @foreach (var product in Model.Product)
+        {
+        <div class="col-3">
+
+            <div><partial name="_ThumbnailAreaPartial" model="product" /></div>
+        </div>
+            
+        }
+    </div>
+

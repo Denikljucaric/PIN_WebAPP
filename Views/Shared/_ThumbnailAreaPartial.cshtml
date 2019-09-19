@@ -3,7 +3,6 @@
 @if (Model.isActive)
 {
         <a asp-action="Details" asp-route-id="@Model.Id">
-            <div class="col-sm-4 col -lg-4 col-md4" >
                 <div class="thumbnail">
                     <img class="img-responsive" style="width: 100%;" asp-append-version=" true" src="data:image/jpg;base64,@Convert.ToBase64String(Model.Picture)" />
                     <div class="caption">
@@ -11,7 +10,7 @@
                         <p class="pull-right">@Model.Price.ToString("C")</p>
                     </div>
                 </div>
-            </div>
+            
         </a>
         }
 
