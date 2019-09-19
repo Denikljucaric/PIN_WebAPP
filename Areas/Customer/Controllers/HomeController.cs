@@ -31,7 +31,7 @@ namespace PIN_WebAPP.Controllers
                 Category = await _db.Category.ToListAsync(),
                 Brand= await _db.Brand.ToListAsync(),
                 SubCategory = await _db.SubCategory.ToListAsync(),
-
+                Carosel = await _db.Carosel.ToListAsync(),
 
             };
 

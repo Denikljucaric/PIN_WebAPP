@@ -22,5 +22,6 @@ namespace PIN_WebAPP.Data
         public DbSet<ShopingCart> ShopingCart { get; set; }
         public DbSet<OrderDetails> OrderDetails { get; set; }
         public DbSet<OrderHeader> OrderHeader { get; set; }
+        public DbSet<PIN_WebAPP.Models.Carosel> Carosel { get; set; }
     }
 }

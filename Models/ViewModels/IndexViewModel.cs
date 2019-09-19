@@ -11,5 +11,6 @@ namespace PIN_WebAPP.Models.ViewModels
         public IEnumerable<Category> Category { get; set; }
         public IEnumerable<SubCategory> SubCategory { get; set; }
         public IEnumerable<Brand> Brand { get; set; }
+        public IEnumerable<Carosel> Carosel { get; set; }
     }
 }
